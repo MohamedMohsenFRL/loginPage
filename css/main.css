@@ -1,0 +1,68 @@
+:root {
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* start main */
+
+main {
+  background-image: url("../images/img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main .wrapper {
+  min-width: 420px;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  backdrop-filter: blur(20px);
+  padding: 1.875rem 2.5rem;
+}
+
+.wrapper h1 {
+  font-size: 2.5rem;
+}
+
+.wrapper form input,
+.wrapper form input:focus {
+  padding: 0.625rem 1.25rem;
+  background: transparent;
+}
+
+.wrapper form input {
+    border: 2px solid var(--border-color);
+    transition: border 0.5s;
+    color: white !important;
+}
+
+.wrapper form input:focus {
+    border: 2px solid white;
+}
+
+.wrapper form input::placeholder {
+    color: white;
+}
+
+.wrapper form i {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.wrapper form button {
+    padding: 0.625rem 1.25rem;
+}
+
+.wrapper p {
+    font-size: 0.93rem;
+}
+
+@media (min-width:992px) {
+    main nav #logout {
+        width: fit-content !important;
+    }
+}
