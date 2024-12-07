@@ -89,14 +89,14 @@ if (btnLogin != null) {
 
 function loginUser() {
   if (loginEmail.value !== "" && loginPassword.value !== "") {
-    let validCheck ;
+    let validCheck;
     for (let i = 0; i < userContainer.length; i++) {
       if (
         loginEmail.value === userContainer[i].email &&
         loginPassword.value === userContainer[i].password
       ) {
         sessionStorage.setItem("user", JSON.stringify(userContainer[i]));
-        location.href = "../pages/home.html";
+        location.href = "pages/home.html";
       } else {
         displayError("Incorrect email or password");
       }
